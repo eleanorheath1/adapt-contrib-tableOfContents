@@ -1,0 +1,15 @@
+{{! make the _globals object in course.json available to this template}}
+{{import_globals}}
+
+<div class="tableOfContents-inner">
+  <div class="tableOfContents-header">Table of Contents</div>
+  {{#each tableOfContents}}
+    <button class="tableOfContents-pages" data-pagelevelprogress-id="{{this.attributes._id}}">{{this.attributes.title}}</button>
+    {{#each this.attributes._children.models}}
+        <button class="tableOfContents-articles" data-articlelevelprogress-id="{{this.attributes._id}}">{{this.attributes.title}}</button>
+        {{#each this.attributes._children.models}}
+          <div class="tableOfContents-blocks" data-blocklevelprogress-id="{{this.attributes._id}}">{{this.attributes.title}}</div>
+        {{/each}}
+    {{/each}}
+  {{/each}}
+</div>

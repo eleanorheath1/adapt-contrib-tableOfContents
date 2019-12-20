@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {
+    "tableOfContents": {
+      "type": "string",
+      "required": true,
+      "default": "true",
+      "inputType": "Checkbox",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_tableOfContents": {
+              "type": "object",
+              "required": false,
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Is enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": ""
+                },
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

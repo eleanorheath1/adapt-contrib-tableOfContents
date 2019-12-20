@@ -1,0 +1,21 @@
+{
+  "name": "adapt-contrib-tableofcontents",
+  "description": "An extension to show a hierarchical view of all courses, articles and blocks in a table of contents",
+  "main": "/js/adapt-contrib-tableOfContents.js",
+  "keywords": [
+    "adapt-plugin"
+  ],
+  "authors": [
+    "Eleanor"
+  ],
+  "license": "MIT",
+  "homepage": "https://https://github.com/eleanorheath1/adapt-interview-task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/plugins",
+    "test",
+    "tests"
+  ]
+}
